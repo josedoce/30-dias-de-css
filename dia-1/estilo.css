@@ -1,0 +1,220 @@
+*{
+	padding: 0;
+	margin: 0 30px;
+	box-sizing: border-box;
+}
+/*All CSS Pseudo Elements
+Selector	Example	Example description
+
+::after	p::after (ok) Insert something after the content of each <p> element
+::before	p::before (ok)	Insert something before the content of each <p> element
+::first-letter	p::first-letter (ok) Selects the first letter of each <p> element
+::first-line	p::first-line (ok) Selects the first line of each <p> element
+::marker	::marker (ok)	Selects the markers of list items
+::selection	p::selection (ok)	Selects the portion of an element that is selected by a user
+*/
+body{
+	background-color: #111111;
+	color:  white;
+	font-size: 40px;
+	font-family: sans-serif;
+}
+/*adiciono depois do elemento, so funciono com o content setado*/
+h1::after{
+	content: "";
+	border-right: 40px solid #ffc107;
+	margin-left: 10px;
+}
+/*adiciono antes do elemento, so funciono com o content setado*/
+h1::before{
+	content: "";
+	border-left: 40px solid #ffc107;
+	margin-right: : 10px;
+}
+/*quero aplicar estilos na primeira letra da frase, (não aplico em elementos com before)*/
+h1::first-letter{ 
+	content: "";
+	color: red;
+}
+/* só aplicarei estilo a primeira linha de paragrafo*/
+.paragrafo1::first-line{
+	color:  lightblue;
+}
+/*aplicarei aos marcadores de listas e etc*/
+::marker{
+	color:  pink;
+}
+/*mudará o background da seleção do usuario para copiar*/
+::selection{
+	background-color: purple;
+}
+/*
+All CSS Pseudo Classes
+Selector	Example	Example description
+
+:active	a:active (ok) Selects the active link
+:checked	input:checked (ok) Selects every checked <input> element
+:disabled	input:disabled (ok)	Selects every disabled <input> element
+:empty	p:empty (ok) Selects every <p> element that has no children
+:enabled	input:enabled (ok) Selects every enabled <input> element
+:first-child	p:first-child (ok) Selects every <p> elements that is the first child of its parent
+:first-of-type	p:first-of-type (ok) Selects every <p> element that is the first <p> element of its parent
+:focus	input:focus (ok) Selects the <input> element that has focus
+:hover	a:hover (ok) Selects links on mouse over
+:in-range	input:in-range (ok) Selects <input> elements with a value within a specified range
+:invalid	input:invalid (ok) Selects all <input> elements with an invalid value
+:lang(language)	p:lang(it) (ok) Selects every <p> element with a lang attribute value starting with "it"
+:last-child	p:last-child (ok) Selects every <p> elements that is the last child of its parent
+:last-of-type	p:last-of-type (ok) Selects every <p> element that is the last <p> element of its parent
+:link	a:link (ok) Selects all unvisited links
+avançado:
+:not(selector)	:not(p)	(ok) Selects every element that is not a <p> element
+:nth-child(n)	p:nth-child(2) (ok)	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2) (ok) Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2) (ok) Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2) (ok) Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type (ok) Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child (ok) Selects every <p> element that is the only child of its parent
+
+:optional	input:optional (ok)	Selects <input> elements with no "required" attribute
+:out-of-range	input:out-of-range (ok)	Selects <input> elements with a value outside a specified range
+:read-only	input:read-only (ok) Selects <input> elements with a "readonly" attribute specified
+:read-write	input:read-write (ok) Selects <input> elements with no "readonly" attribute
+:required	input:required (ok) Selects <input> elements with a "required" attribute specified
+:root	root (ok)	Selects the document's root element
+:target	#news:target (ok) Selects the current active #news element (clicked on a URL containing that anchor name)
+
+:valid	input:valid (ok) Selects all <input> elements with a valid value
+:visited	a:visited (ok) Selects all visited links
+*/
+
+h5:active{ /*aplico estilos ao ser clicado*/
+	color:  green;
+}
+
+
+input:checked{ /*aplico estilos em selecionados(checked)*/
+	width: 50px;
+	height: 50px;
+}
+
+input[type=text]:enabled{ /*aplico estilo em elementos enabled=true*/
+	background-color: #ffc107;
+}
+
+input[type=text]:disabled{/*aplico estilo em elementos disabled=true*/
+	background-color: #f5c;
+}
+
+.div-empty-css>p:empty{ /*aplico estilo se o elemento estiver vazio, funciono em p e h1... */
+	background-color: pink;
+	width: 100px;
+	height: 20px;
+}
+
+.div-primeiro-filho p:first-child {/*aplico estilo ao primeiro p que for filho do elemento pai.*/
+	background-color: yellow;
+	color: black;
+}
+
+.div-primeiro-do-tipo>p:first-of-type{ /*aplico estilo ao primeiro do tipo p*/
+	color: gray;
+}
+
+.efeito-focus>input[type=text]:focus{ /*aplico estilo quando sou focalizado, funciono bem em inputs de texto*/
+	background-color: greenyellow;
+}
+
+.efeito-hover:hover{/**aplico estilo quando se passa a ponteira em cima do elemento*/
+	background-color: greenyellow;
+	color:  black;
+}
+
+
+.em-range>input[type=number]:in-range{/*aplico estilo se estiver entre o min e o max definido no input*/
+	border: 2px solid green;
+}
+.em-range>input[type=number]:out-of-range{
+	border: 2px solid red;
+}
+.email-invalido>input[type=email]:invalid{/*aplico estilo se o campo email estiver invalido, funciono bem em input de emails*/
+	border: 2px solid red;
+}
+
+.email-invalido>input[type=email]:valid{
+	border: 2px solid skyblue;
+}
+
+.lang-definido>p:lang(aqui){/*aplico estilo ao elemento que possuir um lang definido*/
+	background-color: purple;
+}
+
+.div-ultimo-filho>p:last-child{ /*aplico estilo ao ultimo filho do elemento pai*/
+	background-color: #ff0000;
+}
+
+.div-ultimo-do-tipo>p:last-of-type{/*aplico estilo ao ultimo elemento do tipo p*/
+	background-color: gray;
+}
+
+.link-visitado>a:link{/*aplico estilo ao elemento link*/
+	background-color: blue;
+}
+.link-visitado>a:visited{/*aplico estilo a fonte do link se ele ja foi visitado*/
+	color: white;
+}
+
+.todos-meno-p :not(p){ /*aplico em todos mas não em p*/
+	color: red;
+}
+
+.selecione-um-filho>p:nth-child(2){/*aplico de cima para baixo estilo nos filhos que são p*/
+	color:  red;
+}
+
+.selecione-o-ultimo-abaixo-do-filho>
+p:nth-last-child(2){/*aplico de baixo para cima estilo nos filhos que são p*/
+	background-color: red;
+}
+
+.vamo-ve>p:nth-last-of-type(3){/*aplico de baixo para cima estilo em elementos do tipo p*/
+	background-color: yellowgreen;
+}
+
+.vamo-ve>p:nth-of-type(5){/*aplico de cima para baixo estilo em elementos do tipo p*/
+	background-color: yellow;
+	color: black;
+}
+
+.so-um-elemento-no-pai-aceitando-subfilho p:only-of-type{/*só aplico estilo se possuir apenas um elemento do tipo p filho, mas tambem de um subfilho que tambem pode ser pai de p do pai*/
+	background-color: red;
+}
+
+.so-um-elemento-filho-no-pai p:only-child{/*aceito só um filho p no pai, não importa se esta em um subfilho, pego o ultimo elemento do tipo p*/
+	background-color: red;
+}
+
+.input-opcional>input:optional{/*aplico estilo se o input se for opcional*/
+	background-color: yellowgreen;
+}
+
+.input-opcional-required>input:required{/*aplico estilo se o input se for required*/
+	background-color: red;
+}
+
+.input-read-write>input:read-write{/*aplico se o input estiver definido para leitura e escrita(padrão)*/
+	background-color: green;
+}
+
+.input-read-write>input:read-only{/*aplico se o input estiver definido só para leitura*/
+	background-color: darkred;
+}
+
+.link-target-de-pagina :target{/*mudarei o estilo do alvo do link na pagina*/
+	border: 2px solid #D4D4D4;
+  	background-color: #e5eecc;
+  	color: black;	
+}
+:root{/*aplico estilo na raiz, ou seja, no elemento html*/
+	background-color: mediumpurple;
+}
