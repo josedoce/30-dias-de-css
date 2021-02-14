@@ -29,7 +29,7 @@ h1::after{
 h1::before{
 	content: "";
 	border-left: 40px solid #ffc107;
-	margin-right: : 10px;
+	margin-right: 10px;
 }
 /*quero aplicar estilos na primeira letra da frase, (não aplico em elementos com before)*/
 h1::first-letter{ 
