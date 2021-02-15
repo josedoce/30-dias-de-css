@@ -130,8 +130,8 @@ animation-timing-function
 backface-visibility
 background(ok)
 background-attachment(ok)
-background-blend-mode
-background-clip
+background-blend-mode(ok)(sobreposição ou algo assim)
+background-clip(ok)
 background-color(ok)
 background-image(ok)
 background-origin(ok)
@@ -140,37 +140,37 @@ background-repeat(ok)
 background-size(ok)
 border(ok)
 border-bottom(ok)
-border-bottom-color(ok)
-border-bottom-left-radius
-border-bottom-right-radius
-border-bottom-style
-border-bottom-width
-border-collapse
+border-bottom-color(ok)(funciona em conjunto com o border-style)
+border-bottom-left-radius(ok)
+border-bottom-right-radius(ok)
+border-bottom-style(ok)
+border-bottom-width(ok)
+border-collapse(ok)(recomendado usar em tabelas)
 border-color(ok)
-border-image
-border-image-outset
-border-image-repeat
-border-image-slice
-border-image-source
-border-image-width
+border-image(ok)
+border-image-outset(ok)
+border-image-repeat(ok)
+border-image-slice(ok)(funciona com o bisv)
+border-image-source(ok)(funciona com o bis^)
+border-image-width(ok)
 border-left(ok)
-border-left-color
-border-left-style
-border-left-width
+border-left-color(ok)
+border-left-style(ok)
+border-left-width(ok)
 border-radius(ok)
 border-right(ok)
 border-right-color(ok)
-border-right-style
-border-right-width
+border-right-style(ok)
+border-right-width(ok)
 border-spacing
-border-style
+border-style(ok)
 border-top(ok)
 border-top-color(ok)
-border-top-left-radius
-border-top-right-radius
-border-top-style
-border-top-width
-border-width
+border-top-left-radius(ok)
+border-top-right-radius(ok)
+border-top-style(ok)
+border-top-width(ok)
+border-width(ok)(aplica em todos os cantos)
 bottom(ok)
 box-decoration-break
 box-shadow
