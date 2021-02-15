@@ -1,0 +1,110 @@
+*{
+	padding: 0;
+	margin: 0 30px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #b4b4b4;
+	color:  white;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+:target{
+    border: 1px solid rgb(69, 9, 138);
+    border-radius: 5px;
+}
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+/*
+    CSS Combinators:
+    elemento_nome(p).classe{aplique em elemento_nomes que tiverem .classe}
+    elemento_pai(div) elemento_filho(p){aplique em todos os elementos_filho(p) que são filhos do elemento_pai(div)}
+    elemento_pai(div)>elemento_filho(p){aplique em todos os elentos filhos desse pai que sejam p}
+    elemento_sup(div)+elemento_inf(p){aplique no elemento inferior ao div que seja o p, caso não seja p, não aplique em ninguem}
+    elemento_sup(div)~elemento_inf(p){aplique abaixo de div todos que são irmaos do tipo p}
+    */
+.bas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.cores-titulo{
+    background-color: wheat;
+    color: black;
+}
+
+p.cores-opcoes:nth-of-type(1){
+    background-color: rgb(53, 86, 231);
+}
+p.cores-opcoes:nth-of-type(2){
+    background-color: rgba(53, 86, 231, 0.522);
+}
+p.cores-opcoes:nth-of-type(3){
+    background-color: #03e70e;
+}
+p.cores-opcoes:nth-of-type(4){
+    background-color: #03e70e5b;
+}
+p.cores-opcoes:nth-of-type(5){
+    background-color: hsl(189, 97%, 46%);
+}
+p.cores-opcoes:nth-of-type(6){
+    background-color: hsl(189, 97%, 46%, 0.300);
+}
+
+.backgrounds{
+    padding: 10px;
+}
+.backgrounds:nth-of-type(1){
+    background-color: rgba(11, 66, 91, 0.589);
+}
+.backgrounds:nth-of-type(2){
+    background-color: rgb(69, 34, 192);
+    background-image: url("https://st2.depositphotos.com/6544740/9337/i/600/depositphotos_93376372-stock-photo-sunset-over-sea-pier.jpg");
+    height: 500px;
+    /*background-repeat: repeat-x repeat-y; /*repito em x e y*/
+    background-repeat: no-repeat;/*não aceito que se repita*/
+    background-position: center top; /*posicione no centro no topo*/
+}
+.backgrounds:nth-of-type(3){
+    background-color: rgb(34, 187, 192);
+    background-image: url("https://st2.depositphotos.com/6544740/9337/i/600/depositphotos_93376372-stock-photo-sunset-over-sea-pier.jpg");
+    height: 500px;
+    /*background-repeat: repeat-x repeat-y; /*repito em x e y*/
+    background-repeat: no-repeat;/*não aceito que se repita*/
+    background-position: center top; /*posicione no centro no topo*/
+    /**background-attachment: fixed; /*ficarei fixo de acordo com a janela*/
+    background-attachment: scroll;/*subirei conforme o scroll*/
+}
+.backgrounds:nth-of-type(4){
+    background: red url("https://st2.depositphotos.com/6544740/9337/i/600/depositphotos_93376372-stock-photo-sunset-over-sea-pier.jpg") no-repeat scroll center top;
+    /*sequencia
+        background-color
+        background-image
+        background-repeat
+        background-attachment
+        background-position
+    */
+}
+.borders h1{
+    margin: 15px 0;
+}
+.borders h1:nth-of-type(1){
+    background: rgb(153, 139, 139);
+    border: 1px solid rgb(108, 211, 113);
+}
+
+.borders h1:nth-of-type(2){
+    background: rgb(153, 139, 139);
+    border-bottom: 1px solid rgb(26, 2, 26);
+}
+.borders h1:nth-of-type(3){
+    background: rgb(153, 139, 139);
+    border-radius: 8px;
+    border-bottom: 1px solid rgb(26, 2, 26);
+}
+.borders h1:nth-of-type(4){
+    background: rgb(153, 139, 139);
+    border-left: 6px solid rgb(5, 9, 255);
+}
