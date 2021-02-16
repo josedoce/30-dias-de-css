@@ -1,21 +1,4 @@
-*{
-	padding: 0;
-	margin: 0 30px;
-	box-sizing: border-box;
-}
-body{
-	background-color: #b4b4b4;
-	color:  white;
-	font-size: 20px;
-	font-family: sans-serif;
-}
-:target{
-    border: 1px solid rgb(69, 9, 138);
-    border-radius: 5px;
-}
-hr{
-    border: 1px solid rgba(0, 0, 0, 0.295);
-}
+
 /*
     CSS Combinators:
     elemento_nome(p).classe{aplique em elemento_nomes que tiverem .classe}
@@ -24,11 +7,7 @@ hr{
     elemento_sup(div)+elemento_inf(p){aplique no elemento inferior ao div que seja o p, caso não seja p, não aplique em ninguem}
     elemento_sup(div)~elemento_inf(p){aplique abaixo de div todos que são irmaos do tipo p}
     */
-.bas{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
+
 .cores-titulo{
     background-color: wheat;
     color: black;
