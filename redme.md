@@ -260,8 +260,8 @@ margin-bottom(ok)
 margin-left(ok)
 margin-right(ok)
 margin-top(ok)
-max-height
-max-width
+max-height(ok)
+max-width(ok)
 @media(ok)
 min-height
 min-width

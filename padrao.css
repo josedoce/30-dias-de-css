@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0 30px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #b4b4b4;
+	color:  white;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+:target{
+    border: 1px solid rgb(69, 9, 138);
+    border-radius: 5px;
+}
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+.bas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
