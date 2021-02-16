@@ -9,12 +9,12 @@ CSS Comments(ok)
 CSS Colors(ok)
 CSS Backgrounds(ok)
 CSS Borders(ok)
-CSS Margins
-CSS Padding
-CSS Height/Width
-CSS Box Model
-CSS Outline
-CSS Text
+CSS Margins(ok)
+CSS Padding(ok)
+CSS Height/Width(ok)
+CSS Box Model(ok)
+CSS Outline(ok)
+CSS Text(ok)
 CSS Fonts
 CSS Icons
 CSS Links
@@ -272,9 +272,9 @@ opacity(ok)
 order
 outline(ok)
 outline-color(ok)
-outline-offset
-outline-style
-outline-width
+outline-offset(ok)
+outline-style(ok)
+outline-width(ok)
 overflow(ok)
 overflow-x
 overflow-y
