@@ -74,9 +74,67 @@
     direction: rtl;
     unicode-bidi: bidi-override; /*inverte palavras*/
 }
-.text h1:nth-of-type(7){
-    background-color: #073db1;
+.text p:nth-of-type(1)> img{
+    max-width: 200px;
+    vertical-align: bottom;
+    
+    /*propriedades:
+        bottom,
+        middle,
+        top
+    ;*/
+}
+.text p:nth-of-type(1){
+    background-color: #151515;
     color: #ffc107;
-    direction: rtl;
-    unicode-bidi: bidi-override; /*inverte palavras*/
+    height: 200px;
+}
+
+.text-decoration h1:nth-of-type(1){
+    text-decoration: underline;
+    text-decoration-color: #ffc107;
+    text-decoration-style: dashed;
+    /* text-decoration-line: underline; mesma coisa do de cima*/
+}
+
+.text-transform h1:nth-of-type(1){
+    background-color: #151515;
+    text-indent: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.text-transform p:nth-of-type(1){
+    background-color: #ffc107;
+    
+    text-transform: lowercase;
+    font-size: 30px;
+}
+.text-transform h1:nth-of-type(2){
+    background-color: #151515;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-shadow: 0px 5px 2px #2bc42b;
+}
+.text-transform p:nth-of-type(2){
+    border: 1px solid #151515;
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;/*propriedades: clip, ellipsis*/
+}
+.text-transform h1:nth-of-type(3){
+    background-color: #ffb20c;
+    letter-spacing: 10px;
+}
+.text-transform p:nth-of-type(3){
+    background-color: #151515;
+    line-height: 0.8;
+}
+.text-transform p:nth-of-type(4){
+    background-color: #ffb20c;
+    word-spacing: 10px;
+}
+.text-transform p:nth-of-type(5){
+    background-color: #030303;
+    white-space: nowrap;
 }

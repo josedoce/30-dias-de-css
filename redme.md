@@ -249,8 +249,8 @@ isolation
 justify-content(ok)
 @keyframes
 left(ok)
-letter-spacing
-line-height
+letter-spacing(ok)
+line-height(ok)
 list-style
 list-style-image
 list-style-position
@@ -297,16 +297,16 @@ scroll-behavior
 tab-size
 table-layout
 text-align(ok)
-text-align-last
+text-align-last(ok)
 text-decoration(ok)
-text-decoration-color
-text-decoration-line
-text-decoration-style
-text-indent
-text-justify
-text-overflow
-text-shadow
-text-transform
+text-decoration-color(ok)
+text-decoration-line(ok)
+text-decoration-style(ok)
+text-indent(ok)
+text-justify(ok)(não entendi muito bem, mas voltarei)
+text-overflow(ok)(funciono bem com o overflow e white-space)
+text-shadow(ok)
+text-transform(ok)
 top(ok)
 transform(ok)
 transform-origin
@@ -318,12 +318,12 @@ transition-property
 transition-timing-function
 unicode-bidi
 user-select
-vertical-align
+vertical-align(ok)
 visibility
-white-space
+white-space(ok)
 width(ok)
 word-break
-word-spacing
+word-spacing(ok)
 word-wrap
 writing-mode
 z-index
