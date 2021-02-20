@@ -162,7 +162,7 @@ border-right(ok)
 border-right-color(ok)
 border-right-style(ok)
 border-right-width(ok)
-border-spacing
+border-spacing(ok)(espaço aplicado quando border-collpse está habilitado)
 border-style(ok)
 border-top(ok)
 border-top-color(ok)
@@ -178,12 +178,12 @@ box-sizing
 break-after
 break-before
 break-inside
-caption-side
+caption-side(ok)(usado com a tag <caption> dentro da table)
 caret-color
 @charset
 clear
-clip
-clip-path
+clip(ok)(junto ao position absolute, ele define um tamanho para div(img ou seila o q))
+clip-path(ok)(define um circulo, tipo um border-radius, nesse caso não necessita de position absolute, só precisa ser um img ou um div)
 color(ok)
 column-count
 column-fill
@@ -200,8 +200,8 @@ counter-increment
 counter-reset
 cursor(ok)
 direction
-display
-empty-cells
+display(ok)
+empty-cells(ok)(usado quando uma celula está vazia, se hide, esconde a celula, se show, exibe a celula)
 filter
 flex
 flex-basis
@@ -211,18 +211,18 @@ flex-grow
 flex-shrink
 flex-wrap(ok)
 float(ok)
-font
-@font-face
+font(ok)(conjunto de todos os fonts-)
+@font-face(ok)(importação de arquivo de font)
 font-family(ok)
-font-feature-settings
-font-kerning
+font-feature-settings(ok)(voltarei aqui)
+font-kerning(ok)(não entendi muito bem)
 font-size(ok)
-font-size-adjust
-font-stretch
-font-style
-font-variant
-font-variant-caps
-font-weight
+font-size-adjust(ok)(não entendi muito bem)
+font-stretch(ok)(não entendi muito bem)
+font-style(ok)
+font-variant(ok)
+font-variant-caps(ok)(uma variação de capslocks)
+font-weight(ok)
 grid
 grid-area
 grid-auto-columns
@@ -251,10 +251,10 @@ justify-content(ok)
 left(ok)
 letter-spacing(ok)
 line-height(ok)
-list-style
-list-style-image
+list-style(ok)(combo de style, inside, url(image))
+list-style-image(ok)
 list-style-position
-list-style-type
+list-style-type(ok)
 margin(ok)
 margin-bottom(ok)
 margin-left(ok)
@@ -276,8 +276,8 @@ outline-offset(ok)
 outline-style(ok)
 outline-width(ok)
 overflow(ok)
-overflow-x
-overflow-y
+overflow-x(ok)
+overflow-y(ok)
 padding(ok)
 padding-bottom(ok)
 padding-left(ok)
@@ -289,13 +289,13 @@ page-break-inside
 perspective
 perspective-origin
 pointer-events
-position
+position(ok)
 quotes
 resize(ok)
 right(ok)
 scroll-behavior
 tab-size
-table-layout
+table-layout(ok)(define um layout fixo para todas as colunas)
 text-align(ok)
 text-align-last(ok)
 text-decoration(ok)
@@ -319,11 +319,11 @@ transition-timing-function
 unicode-bidi
 user-select
 vertical-align(ok)
-visibility
+visibility(ok)
 white-space(ok)
 width(ok)
 word-break
 word-spacing(ok)
 word-wrap
 writing-mode
-z-index
+z-index(ok)(funciona bem com a propriedade position)

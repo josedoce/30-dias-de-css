@@ -28,6 +28,7 @@
 			"            <link rel=\"stylesheet\" href=\"./stilo.css\">",
 			"            <link rel=\"stylesheet\" href=\"../padrao.css\">",
 			"            <title>30 dias de css</title>",
+			"            <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">",
 			"        </head>",
 			"        <body>",
 			"            <h2>indice</h2>",
