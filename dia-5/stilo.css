@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+         url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
+.font h1:nth-of-type(1){
+    font-family: 'Courier New', Courier, monospace;
+}
+.font h1:nth-of-type(2){
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 200;
+}
+.font h1:nth-of-type(3){
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-variant: small-caps;
+}
+.font h1:nth-of-type(4){
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    font-size: 5em;
+}
+.font h1:nth-of-type(5){
+    font-family: "Sofia",sans-serif;
+}
+.font h1:nth-of-type(6){
+    font: italic small-caps bold 20px/30px "Sofia",sans-serif;
+    /*ordem: 
+    font-style;
+    font-variant;
+    font-weight;
+    font-size;
+    font-family;
+    */
+}
+.font h1:nth-of-type(8){
+    /* font-feature-settings: "smcp" on; */
+    font-feature-settings: "c2sc", "smcp";
+    /* font-feature-settings: "liga" 0; */
+    /* font-feature-settings: "frac"; */
+    color: #7f08ee;
+}
+.font h1:nth-of-type(9){
+    font-kerning: none;   
+}
+.font h1:nth-of-type(10){
+    font-kerning: normal;   
+}
+.font h1:nth-of-type(11){
+    font-size-adjust: 0.80;
+    font-family: 'times new roman';
+}
+.font h1:nth-of-type(12){
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch: condensed;
+}
+.font h1:nth-of-type(13){
+    font-variant-caps: all-petite-caps;
+    /*
+        normal
+        small-caps
+        all-small-caps
+        petite-caps
+        all-petite-caps
+        unicase
+        titling-caps
+    */
+}
+.link a:nth-of-type(1){
+    color: #202020;
+}
+.link a:nth-of-type(1):hover{
+    color: #7f08ee;
+}
+.link a:nth-of-type(1):visited{
+    color: #ee2308;
+}
+.link a:nth-of-type(3):link{
+    color: #1bee08;
+}
+.link a:nth-of-type(5){
+    cursor: wait;
+    /*
+    auto
+crosshair
+default
+e-resize
+help
+move
+n-resize
+ne-resize
+nw-resize
+pointer
+progress
+s-resize
+se-resize
+sw-resize
+text
+w-resize
+wait*/
+}
