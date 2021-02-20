@@ -173,15 +173,15 @@ border-top-width(ok)
 border-width(ok)(aplica em todos os cantos)
 bottom(ok)
 box-decoration-break
-box-shadow
-box-sizing
+box-shadow(ok)(sombra)
+box-sizing(ok)(voltarei aqui)
 break-after
 break-before
 break-inside
 caption-side(ok)(usado com a tag <caption> dentro da table)
 caret-color
 @charset
-clear
+clear(ok)(funciona em conjunto com o float, mas não compreendi bem como aplicar ele.)
 clip(ok)(junto ao position absolute, ele define um tamanho para div(img ou seila o q))
 clip-path(ok)(define um circulo, tipo um border-radius, nesse caso não necessita de position absolute, só precisa ser um img ou um div)
 color(ok)
@@ -250,14 +250,14 @@ justify-content(ok)
 @keyframes
 left(ok)
 letter-spacing(ok)
-line-height(ok)
+line-height(ok)(recomendado ter o mesmo height que o do elemento pai)
 list-style(ok)(combo de style, inside, url(image))
 list-style-image(ok)
 list-style-position
 list-style-type(ok)
 margin(ok)
 margin-bottom(ok)
-margin-left(ok)
+margin-left(ok)(auto so funciona com block)
 margin-right(ok)
 margin-top(ok)
 max-height(ok)
@@ -311,7 +311,7 @@ top(ok)
 transform(ok)
 transform-origin
 transform-style
-transition
+transition(ok)(união de todas as propriedade abaixo)
 transition-delay
 transition-duration
 transition-property
