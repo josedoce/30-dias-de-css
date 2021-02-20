@@ -1,0 +1,138 @@
+.max h1:nth-of-type(1){
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73ad21;
+}
+.max h1:nth-of-type(2){
+    max-width: 500px;
+    margin: 4px auto;
+    border: 3px solid #73ad21;
+}
+
+/*position*/
+
+.position h1:nth-of-type(1){
+    position: static;/*sigo o fluxo de acordo com o normal*/
+    border: 1px solid palevioletred;
+}
+.position h1:nth-of-type(2){
+    position: relative;/*estou relativo em relação ao meu pai*/
+    left: 30px;
+    top: -30px;
+    border: 1px solid palevioletred;
+}
+.position h1:nth-of-type(3){
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    border: 1px solid palevioletred;
+}
+.absolute-e-relative{
+    border: 1px solid rgb(112, 114, 216);
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.absolute-e-relative>div:nth-of-type(1){
+    border: 1px solid rgb(250, 31, 31);
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    height: 180px;
+}
+.position h1:nth-of-type(4){
+    position: sticky;
+    top: 0;
+    border: 1px solid palevioletred;
+}
+.z-index{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: wheat;
+}
+.z-index div:nth-of-type(1){
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    background-color: royalblue;
+    width: 100px;
+    height: 100px;
+    color: white;
+    z-index: 1;
+}
+.z-index div:nth-of-type(2){
+    text-align: right;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    background-color: rgb(21, 177, 34);
+    width: 100px;
+    height: 100px;
+    color: white;
+    z-index: 0;
+}
+.z-index div:nth-of-type(3){
+    text-align: right;
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    background-color: rgb(21, 120, 177);
+    width: 100px;
+    height: 100px;
+    color: white;
+    z-index: 2;
+}
+
+/*overflow*/
+
+.overflow div:nth-of-type(1){
+    width: 400px;
+    height: 50px; 
+    overflow: visible;/*por padrão, o overflow é visivel*/
+    background-color: tomato;
+    padding: 10px;
+}
+.overflow div:nth-of-type(2){
+    width: 400px;
+    margin-top:50px;
+    height: 50px; 
+    overflow: hidden;
+    background-color: tomato;
+    padding: 10px;
+}
+.overflow div:nth-of-type(3){
+    width: 400px;
+    margin-top:50px;
+    height: 50px; 
+    overflow: scroll;
+    background-color: tomato;
+    padding: 10px;
+}
+.overflow div:nth-of-type(4){
+    width: 400px;
+    margin-top:50px;
+    height: 50px; 
+    overflow: auto;/*so adiciono quando é necessario*/
+    background-color: tomato;
+    padding: 10px;
+}
+.overflow div:nth-of-type(5){
+    width: 100px;
+    display: flex;
+    margin-top:50px;
+    height: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: rgb(71, 157, 255);
+    padding: 10px;
+}
+.overflow div:nth-of-type(6){
+    width: 200px;
+    margin-top:50px;
+    height: 50px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(71, 157, 255);
+    padding: 10px;
+}
