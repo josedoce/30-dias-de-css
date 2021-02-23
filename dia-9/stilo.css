@@ -1,0 +1,18 @@
+body{
+    counter-reset: section;
+}
+.counters h1::before{
+    counter-increment: section;
+    content: "Usuário " counter(section) ": ";
+}
+.counters_subsection h1::before{
+    counter-reset: subsection;
+}
+.counters_subsection h1::before{
+    counter-increment: section;
+    content: "Section: " counter(section) " ";
+}
+.counters_subsection h2::before{
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection);
+}
